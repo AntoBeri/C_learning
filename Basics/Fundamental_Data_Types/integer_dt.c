@@ -73,5 +73,15 @@ int main()
     //%lld is used to replace long long decimal values.
     printf("Range of unsigned long long int is from: %llu to %llu\n", ullint_min, ullint_max);
 
+    //If the valid range for a data type is exceeded, it will only represent the
+    //amount of bits it can read and store whatever that is. Doing that will act
+    //as a mod function, repeating the available range everytime it is exceeded.
+    //For any n unsigned bit -> mod2**n is used to determine the remain and it is
+    //what is going to be stored.
+
+    //Exceed maximum or minimum values of a data type is like a clock, if you exceed
+    //the minimum by one you get the maximum and if you exceed the maximum by one
+    //you return to the minimum and so on.
+
     return 0;
 }
