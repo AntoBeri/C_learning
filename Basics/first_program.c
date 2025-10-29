@@ -10,6 +10,8 @@
 //A program called linker maps the prototypes in the header to the actual code in the
 // C standard library.
 
+//main is the center point of any C program.
+//Compiler will look for it to run the program.
 int main()
 {
     printf("Hello World!");
