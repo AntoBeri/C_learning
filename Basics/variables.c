@@ -14,13 +14,16 @@ int main() {
     //Multible variable declaration.
     int var2, var3, var4;
 
-    //Multiple variable assignation.
+    //Multiple variable assignation same value.
     var2 = var3 = var4 = 5;
+    //Multiple variable assignation different value.
+    int one = 1, two = 2, three = 3;
 
     printf("%d\n", var1); //"%d" allows to print the value in the variable.
     printf("%d\n", var); //"\n" indicates to jump to the next line after printing.
     printf("------------------------\n");
     printf("%d\n%d\n%d\n", var2, var3, var4); //Print multiple variables in mult lines.
+    printf("%d\n%d\n%d\n", one, two, three);
 
     return 0;
 }
